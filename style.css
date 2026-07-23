@@ -77,13 +77,10 @@ a {
   color: var(--text);
 }
 
-.logo-mark {
-  display: block;
-  height: 34px;
-  width: auto;
-  padding: 4px 8px;
-  background: #ffffff;
-  border-radius: 8px;
+.logo-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 
 .nav nav {
@@ -132,19 +129,21 @@ main {
   animation: fade-up 0.7s ease both;
 }
 
-.hero-logo-card {
-  margin-bottom: 28px;
-  padding: 20px 28px;
-  border-radius: var(--radius);
-  background: #ffffff;
+.hero-photo-wrap {
+  margin-bottom: 24px;
+  padding: 4px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
   box-shadow: var(--shadow-lg);
 }
 
-.hero-logo {
+.hero-photo {
   display: block;
-  width: 100%;
-  max-width: 320px;
-  height: auto;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--bg);
 }
 
 .sr-only {
