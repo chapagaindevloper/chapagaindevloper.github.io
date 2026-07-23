@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Chapagain Developer — Medicines & Health Essentials</title>
 <meta name="description" content="Chapagain Developer — order medicines and health essentials via WhatsApp or call. Fast local delivery.">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0f9d78">
+<link rel="icon" type="image/png" href="assets/icon-192.png">
+<link rel="apple-touch-icon" href="assets/icon-192.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -189,5 +193,10 @@
 </footer>
 
 <script src="script.js"></script>
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("sw.js");
+  }
+</script>
 </body>
 </html>
